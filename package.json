@@ -1,0 +1,11 @@
+{
+  "name": "malak-poll",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

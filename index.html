@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malak's Poll</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f4f4f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.1);
+      text-align: center;
+      max-width: 90vw;
+    }
+    h1 { margin: 0 0 8px; }
+    .sub { margin: 0 0 24px; color: #666; }
+    button {
+      font-size: 1.1rem;
+      padding: 12px 36px;
+      margin: 8px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+    }
+    #yes { background: #4caf50; }
+    #no  { background: #e53935; }
+    button:hover { opacity: .85; }
+    a { color: #3b5bdb; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div id="question">
+      <h1>Malak, do you like guys?</h1>
+      <p class="sub">you have nosefetsh</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h1>Thanks for answering!</h1>
+      <p>You answered: <strong id="answer"></strong></p>
+      <a id="back">Back</a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
